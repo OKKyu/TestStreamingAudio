@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport"
+              content="width=320,height=480,initial-scale=1.0,user-scalable=yes" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='AudioBufPlayerDefault.css') }}" type="text/css"  />
+        <link rel="stylesheet" href="{{ url_for('static', filename='cssbase.css') }}" type="text/css"  />
+        <link rel="stylesheet" media="screen and (max-width: 480px)" href="{{ url_for('static', filename='cssbase_mobile.css') }}" type="text/css"  />
+        <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 1024px)" href="{{ url_for('static', filename='cssbase_tablet.css') }}" type="text/css"  />
+        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="{{ url_for('static',filename='cssbase_pc.css') }}" type="text/css"  />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="{{ url_for('static', filename='js/lib/jquery-2.2.2.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/AudioBufPlayer.js') }}"></script>
+        <title>common.siteTitle</title>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+    
+    <script src="{{ url_for('static', filename='js/TestStreamAudioMain.js') }}"></script>
+</html>

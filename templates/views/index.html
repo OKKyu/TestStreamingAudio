@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+{% block content %}
+  <main>
+      <div id="leftPanel" class="leftPanel"></div>
+      <div id="contentsMain" class="mainPanel">
+        <input type="button" id="getSound" name="getSound" value="get" onclick="TSAM.getBuffer();"></input>
+        <input type="text"   id="soundName" name="soundName"></input>
+        <hr>
+        <div id="AudioBufPlayer1">
+          <audio-buf-player
+                 v-bind:arybuf="arybuf">
+          </audio-buf-player>
+        </div>
+      </div>
+      <div id="rightPanel" class="rightPanel"></div>
+  </main>
+{% endblock %}

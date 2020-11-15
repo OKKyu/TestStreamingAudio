@@ -1,0 +1,73 @@
+/*
+ * AudioBufPlayer.css version 0.1.2
+ *   This is default style for components of AudioBufPlayer.
+*/
+
+/*  main body  */
+div.audio-buf-player {
+  border:1px solid #8F8F8F;
+  box-shadow: 1px 1px 1px #CFCFCF;
+  background-color:#FFFFFF;
+  position:relative;
+  padding:4px;
+}
+
+/*  Common settings of each element  */
+div.audio-buf-player span {
+  display:inline-block;
+}
+
+/*  button  */
+div.audio-buf-player span.audio-buf-player-button.start{
+  width:10%;
+  height:100%;
+  background-image:URL('image/play_green.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:right;
+}
+div.audio-buf-player span.audio-buf-player-button.start:hover{
+  background-image: URL('image/play_red.png');
+}
+div.audio-buf-player span.audio-buf-player-button.start.running{
+  background-image: URL('image/pause_green.png');
+}
+div.audio-buf-player span.audio-buf-player-button.start.running:hover{
+  background-image: URL('image/pause_red.png');
+}
+div.audio-buf-player span.audio-buf-player-button.stop{
+  width:10%;
+  height:100%;
+  background-image:URL('image/stop_green.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left;
+}
+div.audio-buf-player span.audio-buf-player-button.stop:hover{
+  background-image: URL('image/stop_red.png');
+}
+
+/*  indicator  */
+div.audio-buf-player span.audio-buf-player-bar{
+  width:50%;
+  height:50%;
+  vertical-align:top;
+  border:1px solid #7E7E7E;
+  background-color:#E3E3E3;
+  margin-top:12px;
+}
+div.audio-buf-player span.audio-buf-player-bar .inner{
+  width:0%;
+  height:100%;
+  vertical-align:top;
+  background-color:#FFFFFF;
+}
+
+/*  time displayer  */
+div.audio-buf-player span.audio-buf-player-time{
+  width:20%;
+  vertical-align:top;
+  text-align:center;
+  height:50%;
+  margin-top:16px;
+}

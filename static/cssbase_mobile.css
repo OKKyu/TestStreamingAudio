@@ -1,0 +1,51 @@
+/*************************************************************************
+ * cssbase_mobile.css
+ *  This code define about style of mobile.
+ *************************************************************************/
+/* ====================================================
+ * ELEMENT
+ * ===================================================*/
+html{
+  height:100%;
+  display:block;
+}
+body{
+  font-size: 10pt;
+  max-width:480px;
+  overflow-y: scroll;
+  padding-top:2%;
+  padding-bottom:2%;
+}
+main{
+  margin:12px;
+  min-width:340px;
+}
+/* ====================================================
+ * Font
+ * ===================================================*/
+
+/* ====================================================
+ * Layout
+ * ===================================================*/
+.leftPanel, .rightPanel{
+  width:10px;
+}
+.mainPanel{
+  min-height:100%;
+}
+/* ====================================================
+ * audio-buf-player
+ * ===================================================*/
+/* main body */
+div.audio-buf-player {
+  width:310px;
+  height:30px;
+}
+/*  indicator  */
+div.audio-buf-player span.audio-buf-player-bar{
+  margin-top:8px;
+}
+/*  time displayer  */
+div.audio-buf-player span.audio-buf-player-time{
+  margin-top:8px;
+}

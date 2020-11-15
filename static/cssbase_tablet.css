@@ -1,0 +1,53 @@
+/*************************************************************************
+ * cssbase_tablet.css
+ *  This code define about style of tablet.
+ *************************************************************************/
+/* ====================================================
+ * ELEMENT
+ * ===================================================*/
+html{
+  height:90%;
+  display:block;
+}
+body{
+  font-size: 12pt;
+  min-width:480px;
+  max-width:1024px;
+  min-height:680px;
+  overflow-y: scroll;
+  padding-top:2%;
+  padding-bottom:2%;
+}
+main{
+  margin:24px;
+}
+/* ====================================================
+ * Font
+ * ===================================================*/
+
+/* ====================================================
+ * Layout
+ * ===================================================*/
+.leftPanel, .rightPanel{
+  width:5%;
+}
+.mainPanel{
+  width:80%;
+  min-height:100%;
+}
+/* ====================================================
+ * audio-buf-player
+ * ===================================================*/
+/* main body */
+div.audio-buf-player {
+  width:350px;
+  height:40px;
+}
+/*  indicator  */
+div.audio-buf-player span.audio-buf-player-bar{
+  margin-top:10px;
+}
+/*  time displayer  */
+div.audio-buf-player span.audio-buf-player-time{
+  margin-top:12px;
+}
